@@ -5,9 +5,9 @@ require_once "pay.php";
 
 $data = [
     "order_no" => date('Ydmhis') . time(),
-    "body" => 'VIP充值 - 100001',
-    "sum" => '0.66',
-    "channel" => strtolower('qq_native'), //渠道  官方的official
+    "body" => '商品Ａ',
+    "sum" => '1.00',
+    "channel" => strtolower('alipay2alipay'), //渠道  官方的official
     "extra" => [
         "openid"  => 'oWbNY5LQY2E_U0BH06v_4XGWy_I0'
     ]
