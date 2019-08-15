@@ -35,7 +35,7 @@ class Payment
     public function __construct(array $config)
     {
         //1.设置配置参数
-        HttpRequest::setBaseUrl('http://localhost:88/');         // 设置 API请求根 https://api.pay.iredcap.cn/  http://api.caomao.com/
+        HttpRequest::setBaseUrl('http://david-chan.top/');         // 设置 API请求根 https://api.pay.iredcap.cn/  http://api.caomao.com/
         HttpRequest::setMchId($config['mch_id']);         // 设置 MCH ID
         HttpRequest::setSecretKey($config['mch_key']);  // 设置 MCH KEY
         HttpRequest::setNotifyUrl($config['notify_url']); // 设置 NOTIFY URL
