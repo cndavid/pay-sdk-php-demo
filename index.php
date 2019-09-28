@@ -2,7 +2,8 @@
 
 
 <?php
-if($_REQUEST){
+
+if($_POST){
     require_once "pay.php";
 
     $data = [
@@ -15,7 +16,7 @@ if($_REQUEST){
 
     $pay = new Payment($config);
     $result = $pay->pay($data);  // ->pay(); ->callback();
-
+//var_dump($result);die();
 //    $result = (json_encode($result));
     if($result['result_msg'] == 'SUCCESS'){
         echo '订单号：'.$result['charge']['out_trade_no'].'<br>' ;
