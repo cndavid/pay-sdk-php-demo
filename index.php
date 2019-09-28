@@ -18,11 +18,13 @@ if($_POST){
     $result = $pay->pay($data);  // ->pay(); ->callback();
 //var_dump($result);die();
 //    $result = (json_encode($result));
-    if($result['result_msg'] == 'SUCCESS'){
-        echo '订单号：'.$result['charge']['out_trade_no'].'<br>' ;
-        echo '<img src="'.$result['charge']['credential']['qrcode'] .'">';
-        exit();
-    }else{
+    if(is_array($result)){
+        if($result['result_msg'] == 'SUCCESS'){
+            echo '订单号：'.$result['charge']['out_trade_no'].'<br>' ;
+            echo '<img src="'.$result['charge']['credential']['qrcode'] .'">';
+            exit();
+        }
+    } else{
         exit('无响应，请检查网络');
     }
 }else{
