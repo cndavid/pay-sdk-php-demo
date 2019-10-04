@@ -23,6 +23,10 @@ if($_POST){
             echo '订单号：'.$result['charge']['out_trade_no'].'<br>' ;
             echo '<img src="'.$result['charge']['credential']['qrcode'] .'">';
             exit();
+        }else{
+            echo '<pre>';
+            print_r($result);
+            exit();
         }
     } else{
         exit('无响应，请检查网络');
