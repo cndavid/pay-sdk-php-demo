@@ -19,7 +19,7 @@ $config = [
     //平台商户ID
     'mch_id'     =>  '100013',
     //商户key
-    'mch_key'    =>  'bfc31903de7923691e31d44a1225ef77',
+    'mch_key'    =>  'c52a2396c87e60b306d129e17e4ccd74',
     //商户数据私钥 后台设置需要填写 公钥
     'private_key'   =>  'MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBANrXBFMRZ/HOL/WO
 RVcQ7OjxCu95dvDjD2HMlCbWiWdFhoIM7uY5q2k3jt2vZmZzxnsisGCCElupTKm8
