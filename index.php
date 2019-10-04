@@ -29,6 +29,8 @@ if($_POST){
             exit();
         }
     } else{
+        echo '<pre>';
+        print_r($result);
         exit('无响应，请检查网络');
     }
 }else{
