@@ -19,9 +19,12 @@ $config = [
     //平台商户ID
     'mch_id'     =>  '100013',
     //商户key
-    'mch_key'    =>  '98f2d8b2340e8dd8eb8e56829475bb0f',
+    'mch_key'    =>  'bfc31903de7923691e31d44a1225ef77',
     //商户数据私钥 后台设置需要填写 公钥
-    'private_key'   =>  '123qweasdzxc',
+    'private_key'   =>  'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDa1wRTEWfxzi/1jkVXEOzo8Qrv
+eXbw4w9hzJQm1olnRYaCDO7mOatpN47dr2Zmc8Z7IrBgghJbqUypvJW/G7plgAGd
+aN63y08R3sI5kvT3xZn+ctozrJzW80gth+e4lddiG79padjfCxF9HbJLWutXzlOR
+ysgzEJAWGfSSoy3hQwIDAQAB',
     //支付平台公钥
     'cm_public_key'    =>  'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxV1hB4NP1NFgEM0mrx34z8gJMPBIhvDjAJcnMozk3jmUY9PkB7lZyfD6Fb+Xq21jIPX5zF4ggeYoK5keUH6TW9eJEr5JOqDl2YgKAdLfxLuJ4r8X1S3wflVp2/BURIbP1VGh6qNAxS3o8miL7x5BZ+jOhs4/LCq8YkncZioui5eAQ+/BoE++uM5IeSWZEVf8JsGo+MrOG2E/eOqetrB08Tm68igM6OMbKr05HKupcZm63zzDIHRJGKRjvdFjVoVznGsAC3phyh3bzYrjxykH00mLyw39/77MiBMp/uWVMh6wwiAjY2B25IKXXGCd0JSYvlpJWtCKbxlcAGDWSWkS0wIDAQAB',
     'notify_url'    =>  'http://'.$_SERVER['HTTP_HOST'].'/notify.php',
