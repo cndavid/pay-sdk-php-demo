@@ -35,8 +35,8 @@ class Payment
     public function __construct(array $config)
     {
         //1.设置配置参数
-//        HttpRequest::setBaseUrl('https://haihui.club/');         // 设置 API请求根
-        HttpRequest::setBaseUrl('https://david.pandaspay.co/');         // 设置 API请求根
+        HttpRequest::setBaseUrl('http://pay.com/');         // 设置 API请求根
+//        HttpRequest::setBaseUrl('https://david.pandaspay.co/');         // 设置 API请求根
         HttpRequest::setMchId($config['mch_id']);         // 设置 MCH ID
         HttpRequest::setSecretKey($config['mch_key']);  // 设置 MCH KEY
         HttpRequest::setNotifyUrl($config['notify_url']); // 设置 NOTIFY URL

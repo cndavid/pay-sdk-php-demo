@@ -1,5 +1,5 @@
 <?php
-
+header('Location: /demo.php');
 if($_POST){
     require_once "pay.php";
 
