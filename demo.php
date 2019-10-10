@@ -9,7 +9,7 @@ $config = [
     'mch_key'    =>  '4a81fa9b5bd509267c0b82abd6946a6e',
 
     'notify_url'    =>  'http://'.$_SERVER['HTTP_HOST'].'/notify.php',
-    'return_url'    =>  'http://'.$_SERVER['HTTP_HOST'].'/return.php'
+    'return_url'    =>  'http://'.$_SERVER['HTTP_HOST'],
 ];
 
 if($_POST){
@@ -23,6 +23,7 @@ if($_POST){
         "merchant_id" => $config['mch_id'],
         "client_ip" => $_SERVER['REMOTE_ADDR'],
         "notify_url" => $config['notify_url'],
+        "return_url" => $config['return_url'],
     ];
 
     $str = '';
