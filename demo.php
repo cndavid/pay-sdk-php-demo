@@ -2,7 +2,7 @@
 $config = [
     //支付请求url
 //    'url' => 'http://pay.com/pay/unifiedorder',
-    'url' => 'http://haihui.club/pay/unifiedorder',
+    'url' => 'https://david.pandaspay.co/pay/unifiedorder',
     //平台商户ID
     'mch_id'     =>  '100001',
     //商户key
