@@ -66,6 +66,7 @@ if($_POST){
         充值渠道:<select name="channel">
             <option value="alipay2alipay">支付宝二维码</option>
             <option value="Alipay2bill">支付宝H5话费</option>
+            <option value="Wechat2bill">微信H5话费</option>
         </select></br>
         <input type="submit">
     </form>
