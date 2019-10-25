@@ -1,8 +1,8 @@
 <?php
 $config = [
     //支付请求url
-//    'url' => 'http://pay.com/pay/unifiedorder',
-    'url' => 'https://david.pandaspay.co/pay/unifiedorder',
+    'url' => 'http://pay.com/pay/unifiedorder',
+//    'url' => 'https://david.pandaspay.co/pay/unifiedorder',
     //平台商户ID
     'mch_id'     =>  '100001',
     //商户key
@@ -18,7 +18,7 @@ if($_POST){
         "out_trade_no" => date('Ydmhis') . time(),
         "subject" => '商品',
         "amount" => $_REQUEST['amount'],
-        "channel" => strtolower('alipay2alipay'), //渠道  官方的official
+        "channel" => strtolower($_REQUEST['channel']), //渠道  官方的official
         "currency" => 'CNY',
         "merchant_id" => $config['mch_id'],
         "client_ip" => $_SERVER['REMOTE_ADDR'],
@@ -63,7 +63,10 @@ if($_POST){
  ?>
     <form method="post">
         充值金额：<input type="text" name="amount"></br>
-        充值渠道:<select name="channel"><option value="alipay2alipay">微信支付宝二维码</option></select></br>
+        充值渠道:<select name="channel">
+            <option value="alipay2alipay">支付宝二维码</option>
+            <option value="Alipay2bill">支付宝H5话费</option>
+        </select></br>
         <input type="submit">
     </form>
 

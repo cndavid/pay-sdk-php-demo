@@ -65,6 +65,9 @@ class Charge extends HttpRequest
         //获取通知数据
         $params = file_get_contents("php://input");
         LogUtil::INFO('Notify Data: ' . $params);
+        if(!$params){
+            LogUtil::INFO('Notify POST Data: ' . $_POST);
+        }
         $headers = [];
         //获取通知头部
         foreach ($_SERVER as $name => $value)
