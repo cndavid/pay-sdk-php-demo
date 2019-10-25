@@ -45,9 +45,9 @@ if($_POST){
 //    echo'<pre>';print_r($result);die();
     if(is_array($result)){
         if($result['result_msg'] == 'SUCCESS'){
-//            echo '订单号：'.$result['charge']['out_trade_no'].'<br>' ;
-//            echo '<img src="'.$result['charge']['credential']['qrcode'] .'">';
-            header('Location: '.$result['charge']['pay_url']);
+            echo '订单号：'.$result['charge']['out_trade_no'].'<br>' ;
+            echo '<a href="'.$result['charge']['pay_url'].'">点击跳转支付</a>';
+//            header('Location: '.$result['charge']['pay_url']);
             exit();
         }else{
             echo '<pre>';
