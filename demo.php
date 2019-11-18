@@ -69,7 +69,7 @@ if($_POST){
             <option value="Alipay2bill">支付宝H5话费</option>
             <option value="Wechat2bill">微信H5话费</option>
             <option value="wechat_qr">微信web扫码</option>
-            <option value="wechatwap">微信wap扫码</option>
+            <option value="wechatwap">微信wap</option>
         </select></br>
         <input type="submit">
     </form>
